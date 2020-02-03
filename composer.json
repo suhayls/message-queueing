@@ -1,4 +1,9 @@
 {
+    "name": "com.suhayl/message_queueing",
+    "description": "Message Queueing system to store messages in SQLite DB.",
+    "require": {
+        "php": "^7.2"
+    },
     "autoload": {
         "psr-4": {
             "App\\": "app/"
