@@ -35,7 +35,7 @@ abstract class Message {
     /*
      * The message itself. 
      * 
-     * $param string $message
+     * @param string $message
      */
     private $message;
     
@@ -74,6 +74,7 @@ abstract class Message {
     
     /*
      * Function to return the message in an array
+     * 
      * @return array $message
      */
     public function toArray() {
