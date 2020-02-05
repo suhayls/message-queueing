@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 /*
  * Abstract class for Message objects. Message objects should not be modifiable

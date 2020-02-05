@@ -18,7 +18,7 @@ use App\SQLiteSMSDB as SQLiteSMSDB;
 $sqlite = new SQLiteSMSDB((new SQLiteConnection())->connect());
 
 // retrieve all messages in queue and encode in JSON
-$results = $sqlite->getMessages();
+$results = $sqlite->GetAllSMS();
 $messages = [];
 
 foreach ($results as $rs) {

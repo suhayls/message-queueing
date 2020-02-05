@@ -14,8 +14,8 @@ System to queue messages.
 - pdosqlite extension
 
 ## Setup
-1. Clone files in web server directory
-2. Run setup.php to initialize db file (Optionally add parameter dummy_data=1 to load dummy data into database)
+1. Clone files in web server directory and run `composer install`
+2. Load setup.php to initialize db file (Optionally add parameter `dummy_data=1` to load dummy data into database)
 3. Load index.php for HTML view of all messages with HTML form to queue new messages
 4. Load consume-message.php to load next message in queue and display in JSON, deleting the message
 5. Load read-messages.php to display all messages in JSON

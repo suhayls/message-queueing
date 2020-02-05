@@ -2,6 +2,8 @@
 
 namespace App;
 
+use App\Models\SMS as SMS;
+
 /**
  * SQLite SMS DB Management class. This class manages the interaction
  * between the frontend and the SMS DB Storage.
@@ -105,7 +107,7 @@ class SQLiteSMSDB {
      * 
      * @return array 
      */
-    public function getMessages() {
+    public function GetAllSMS() {
         $stmt = $this->pdo->query('SELECT * '
                 . 'FROM messages');
         $messages = [];

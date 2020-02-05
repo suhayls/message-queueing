@@ -18,7 +18,7 @@ use App\SQLiteSMSDB as SQLiteSMSDB;
 $sqlite = new SQLiteSMSDB((new SQLiteConnection())->connect());
 
 // get all messages in the queue
-$messages = $sqlite->getMessages();
+$messages = $sqlite->GetAllSMS();
 ?>
 
 <!DOCTYPE html>
@@ -81,11 +81,11 @@ $messages = $sqlite->getMessages();
                 <table class="form">
                     <tr>
                         <td>Sender</td>
-                        <td><input type="text" name="sender" /></td>
+                        <td><input type="text" name="sender" placeholder="+60123456789" /></td>
                     </tr>
                     <tr>
                         <td>Receiver</td>
-                        <td><input type="text" name="receiver" /></td>
+                        <td><input type="text" name="receiver" placeholder="+60123456789" /></td>
                     </tr>
                     <tr>
                         <td>Message</td>
